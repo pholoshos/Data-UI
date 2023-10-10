@@ -1,0 +1,68 @@
+hello currently you use the rest api to, 
+Most of the requests are post request and always need to have authkey and id of account
+
+    - Send message to User 
+        - post request {
+            body {
+                id,
+                authkey,
+                to,
+                Body
+            }
+        }
+
+    - create  User 
+        - post request {
+            body {
+                emailAddress,
+                username,
+                location,
+                bio,
+                dateOfBirth -not request,
+                password
+
+            }
+        }
+
+    - basic get users
+        - post request {
+            body {
+                id,
+                authkey,
+            }
+        }
+
+    - location  get users
+        - post request {
+            body {
+                id,
+                authkey,
+                location
+            }
+        }
+
+    - likes get users
+        - post request {
+            body {
+                id,
+                authkey,
+                likes
+            }
+        }
+
+    - primary authentification
+        - post request {
+            body {
+                emailAddress,
+                password
+            }
+        }
+
+    - transectional auth - secondary authentification
+        - post request {
+            body {
+                id,
+                authkey,
+            }
+        }
+

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ola-rides",
+  "private_key_id": "1dffe95a146d74d926e829a5a085f08f79d1d618",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8XI5glzZxp2z7\nVJ2gHemS6Ok8N8ooVZQXJILU5r+7chPBkmUiKvNM0csafNqDLew/KM8/s7wkjZJh\nZVmCofF5pGSXtPrJRINCXlZzY8zPsNT8burCFUj7XxuE5dvDfNpoqHrbAyqNdgrA\nMrTYQlDk0UbMmREldzLYHchkkjDtk1JZpTzMvvZhLCpw+h428vOIeV54QG4faJHK\nbBzv7MNM2VAkwCdQq8l6W4tfwiebbO1nhQdFXlbOYnO9142fR9uE2mfKRZa0AEOG\nU1GExHT9AF/xId8Gyzk0MixAglmfM37IXARAvqQAuYmut2y8njGGf7BBr9OrMl9C\n0EguBuv7AgMBAAECggEABXlJF+x9BAuCAsHAPOVxorfLA1l5sfdesNd6R9aWzssv\nYMowzy/hVyOnm9LyBKrieSll8Gt4NbW5gcQQuFedbVQGKlRzj0LC77xPFdZaHtT8\nM4PDpbU5pDhs081cOA+aRz1SKKgsZeT+xfwTPk+bCzM7s/lkwqp2m0ouRyHqcxTu\nn0PDRbEnKQHGx6ugHPDP77393XRrPlC1RA5e0tAwfIEzIWxNbViGmX435iw/u0jP\nDtPQbeqvIqQbya96RJvVZ2TCvLQrdyMdQCE/uewNqYkHKgGvs6p9kkM/YetUen9d\nkwzFkzHfa5Le7KlW6UmWxoANPJha1y+ZTEZ4qUxa9QKBgQDqEJxYlp1V4xcTgOn5\ndOMC7q+PdVHXY2au/KeK82dQoXyG57LlmKDynxVZMCXNq3i2fAISJHBI+lbxho5J\n2FkzFSd4F1Yefvr9m3PyFPzD4maaJSuczHfCxWRvi4Qq4m6d5ROO1jKgQ56OrqGB\nNtGhKdH8+2YiD2E4W7z2jLUg9wKBgQDOA30XXR9ty5VJSNvzfBuEL1aqMCApn1DH\nWM4yhkxqCl8NkuMRx19UIc0Zd7TUDVGoFP8xYmBetFtLq3SNw0oPkmyM+S59NOAf\nGtwqhR1wgQCCPy2+2obputd2hKQRl30oEuNKvimJoG9lQPlp2+TinTj+QqVxaxkz\n0uBh/jNQHQKBgQDCtBaaSo+Ohl0HyFDZRbYhFlPLzhfKR9F+9oSYPWlP1UU1Iz/Z\nZWFc8aBclISd1WmQww8l8FHHIxd3yipKm0F4ELzIVQE6VP6MP+fvFC4+8/HNf+YL\nhLqKtpCZiUDkO38wsQHX664pSpZ2siV+yw8ONS+MdcO7yXdh3k4N+XYieQKBgFgz\n4CvPn/QnNKxiuGEf4rwOdIF7B1oqrrAa0nWJUFAaTqYGHJfxD1x6+FAOE2qypSJc\nkwH2x6HkgC3+o3FKinvuSfF1gjTzHX3Txy2hPoB7itc464IKF7ccWsGQeppZjKlK\npOvMTQZynR7x2Zc8IVvwyoT5zdGoc+rfP1hVOGz1AoGACRXA4pFhPDQ3+ppJ4nHP\nBhOTSomrbntysA/rBlXHsKc9hIozBBNY4O0i/PmXQdJg8QZruzKUR8HSS45VQ9bf\nUJ/tEPU9DPenpNfKk6eufJLHtZWms3zGjnStDkmoTXghFgJRO99Bx50EMQxzjHlE\nVWUqGHv8dljuiEy02JzMtUg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-771@ola-rides.iam.gserviceaccount.com",
+  "client_id": "100354789594090914091",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-771%40ola-rides.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

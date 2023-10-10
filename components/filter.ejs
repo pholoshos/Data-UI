@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    
+    <input type="text" id="filterInput" placeholder="Filter" />
+    <button id="filterButton">Filter</button>
+    
+    <ul>
+        <% content.forEach(function(item) { %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+
+    <script>
+        document.getElementById('filterButton').addEventListener('click', function() {
+            filterList();
+        });
+
+        document.getElementById('filterInput').addEventListener('input', function() {
+            filterList();
+        });
+
+        function filterList() {
+            const filterText = document.getElementById('filterInput').value.toLowerCase();
+            const listItems = document.querySelectorAll('ul li');
+
+            listItems.forEach(function(item) {
+                const itemText = item.textContent.toLowerCase();
+                if (itemText.includes(filterText)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

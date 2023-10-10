@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1><%= title %></h1>
+
+        <input type="text" id="filterInput" placeholder="Filter"/>
+        <button id="filterButton">Filter</button>
+
+        <% if (showPanel) { %>
+            <div id="panel">
+                <button id="addButton">Add</button>
+                <button id="deleteButton">Delete</button>
+                <button id="updateButton">Update</button>
+            </div>
+        <% } %>
+
+        <ul>
+            <% content.forEach(function(item) { %>
+                <li><%= item %></li>
+            <% }); %>
+        </ul>
+
+        <script>
+            document.getElementById('filterButton').addEventListener('click', function () {
+                filterList();
+            });
+
+            document.getElementById('filterInput').addEventListener('input', function () {
+                filterList();
+            });
+
+            function filterList() {
+                const filterText = document.getElementById('filterInput').value.toLowerCase();
+                const listItems = document.querySelectorAll('ul li');
+
+                listItems.forEach(function (item) {
+                    const itemText = item.textContent.toLowerCase();
+                    if (itemText.includes(filterText)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            // Handle panel buttons
+            <% if (showPanel) { %>
+            document.getElementById('addButton').addEventListener('click', function () { // Implement add logic here
+            });
+
+            document.getElementById('deleteButton').addEventListener('click', function () { // Implement delete logic here
+            });
+
+            document.getElementById('updateButton').addEventListener('click', function () { // Implement update logic here
+            });
+            <% } %>
+        </script>
+    </body>
+</html>
