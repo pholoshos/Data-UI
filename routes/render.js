@@ -10,6 +10,7 @@ const {
   createTable,
   createList,
   createButton,
+  createNavBar,
 } = require("../logic/utils/createComponents");
 const router = express.Router();
 
@@ -31,6 +32,11 @@ const pageDataArray = [
   // Add more pages and content types as needed
 ];
 
+router.get("data/:data",(req,res)=>{
+  res.send('data');
+})
+
+
 router.get("/:page", (req, res) => {
   const requestedPage = req.params.page;
 
@@ -49,7 +55,15 @@ router.get("/:page", (req, res) => {
     options: pageOptions,
   });
 
-  const html = createHTMLPage(pageContent, requestedPage);
+  const navData = pageDataArray.map((d)=>{
+    return {text:d.name,url : `/${d.name}?showEdit=true&showDownload=true&showFilter=true`}
+  })
+
+  const html = createHTMLPage(
+    pageContent,
+    requestedPage,
+    createNavBar(navData)
+  );
 
   if (html) {
     res.send(html);
@@ -67,7 +81,7 @@ const getPageContent = ({ page, options }) => {
     if (!!options.showFilter) {
       // Add a filter component
       contents.push(
-        createForm([{ name: "name", label: "Name", type: "text" }])
+        createForm([{ name: "Search", label: "Search", type: "text" }])
       );
     }
     if (!!options.showEdit) {
