@@ -8,13 +8,7 @@ admin.initializeApp({
 });
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCzkYyUsCitZCNqqAgUsdagFAvl5xJiYhg",
-  authDomain: "ola-rides.firebaseapp.com",
-  projectId: "ola-rides",
-  storageBucket: "ola-rides.appspot.com",
-  messagingSenderId: "419332623571",
-  appId: "1:419332623571:web:2758aca2dcc264337a5826",
-  measurementId: "G-0WHXXR78MY",
+
 };
 
 // Function to send a notification to a specific device token
